@@ -1,5 +1,6 @@
 def pascal(column,member):
-    if column == 1:
+    # return 1 if column == 1 elif member == 1 1 elif column == 2 member else column
+   if column == 1:
         return 1
     elif member == 1:
         return 1

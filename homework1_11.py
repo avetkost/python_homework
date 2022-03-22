@@ -17,12 +17,7 @@ def func_val_calcul(n):
 
 #Պոչավոր Ռեկուրսիա
 def func_val_calcul_tall(n,acc):
-    if n < 0 or n != int(n): #ստուգում ենք որ դրական ու ամբողջ թիվ լինի
-        return "wrong value"
-    elif n < 3:
-        return n             #f(n) = n, եթե n < 3 պայմանի սստուգում
-    else:
-        return func_val_calcul(n-1*acc)
+
 
 #print(func_val_calcul_tall(6,3))
 
