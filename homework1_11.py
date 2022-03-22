@@ -16,10 +16,12 @@ def func_val_calcul(n):
 #print(func_val_calcul(6))
 
 #Պոչավոր Ռեկուրսիա
-def func_val_calcul_tall(n,acc):
+def func_val_calcul_tall(n, a, b, c):
+        if n == 0:
+            return a
+        return func_val_calcul_tall(n - 1, b, c, a + b + c)
 
-
-#print(func_val_calcul_tall(6,3))
+#print(func_val_calcul_tall(6,3,3,5))
 
 
 #Իտերացիա
@@ -36,4 +38,4 @@ def func_val_calcul_iter(n):
         c = arj
 
     return a
-print(func_val_calcul_iter(6))
+#print(func_val_calcul_iter(6))
