@@ -24,7 +24,21 @@ def func_val_calcul_tall(n,acc):
     else:
         return func_val_calcul(n-1*acc)
 
-print(func_val_calcul_tall(6,3))
+#print(func_val_calcul_tall(6,3))
 
 
 #Իտերացիա
+def func_val_calcul_iter(n):
+    a = 0
+    b = 1
+    c = 2
+
+    while n > 0:
+        n -= 1
+        arj = a + b + c
+        a = b
+        b = c
+        c = arj
+
+    return a
+print(func_val_calcul_iter(6))
