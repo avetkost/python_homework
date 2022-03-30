@@ -12,3 +12,6 @@ def pascal(column,member):
 
 
 print(pascal(3,6))
+
+
+

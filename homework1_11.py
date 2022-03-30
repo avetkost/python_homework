@@ -16,7 +16,7 @@ def func_val_calcul(n):
 #print(func_val_calcul(6))
 
 #Պոչավոր Ռեկուրսիա
-def func_val_calcul_tall(n, a, b, c):
+def func_val_calcul_tail(n, a, b, c):
         if n == 0:
             return a
         return func_val_calcul_tall(n - 1, b, c, a + b + c)
